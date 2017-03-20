@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayoutEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXZ-yK-SlG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.26155658486804845" green="0.85430401779966769" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="LJt-gf-xSH">
+                                        <variation key="heightClass=regular" constant="60"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="LJt-gf-xSH"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70U-BU-F1a">
+                                <rect key="frame" x="0.0" y="528" width="156" height="139"/>
+                                <color key="backgroundColor" red="1" green="0.54793025079676538" blue="0.60957112968088156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="G6C-7f-cnb"/>
+                                    <constraint firstAttribute="height" constant="139" id="v0A-71-syp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2f-kd-Xti">
+                                <rect key="frame" x="219" y="528" width="156" height="139"/>
+                                <color key="backgroundColor" red="0.32441396480000001" green="1" blue="0.62377217880000002" alpha="0.85904489439999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="UqR-Jj-3I5"/>
+                                    <constraint firstAttribute="width" constant="156" id="zUs-Sm-uyU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="70U-BU-F1a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Vu-3t-qLc">
+                                <variation key="widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="UXZ-yK-SlG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A2z-ua-ghl"/>
+                            <constraint firstAttribute="trailing" secondItem="UXZ-yK-SlG" secondAttribute="trailing" id="BJQ-xf-P5h"/>
+                            <constraint firstItem="UXZ-yK-SlG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MZ7-Fv-KmK">
+                                <variation key="widthClass=regular" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="70U-BU-F1a" secondAttribute="bottom" id="QwJ-O6-71P">
+                                <variation key="widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="a2f-kd-Xti" secondAttribute="trailing" id="SfY-Qa-HkG">
+                                <variation key="widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a2f-kd-Xti" secondAttribute="bottom" id="h6Q-ls-eYl">
+                                <variation key="widthClass=regular" constant="10"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
